@@ -1,139 +1,469 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jagadevi - Interactive Resume</title>
+    <title>Jagadevi Portfolio</title>
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="main.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
-    <!-- Header with Green Gradient -->
-    <header class="top-section">
-      <div class="profile-info">
-        <h1>JAGADEVI</h1>
-        <p>
-          Adaptable and self-motivated MCA graduate passionate about secure,
-          efficient applications.
-        </p>
-        <div class="contact-icons">
-          <span>📞 9741239614</span>
-          <span
-            >✉️
-            <a href="mailto:jagadevij147@gmail.com"
-              >jagadevij147@gmail.com</a
-            ></span
-          >
-          <span
-            >🌐
-            <a href="https://github.com/Jagadevi147" target="_blank"
-              >GitHub</a
-            ></span
-          >
-          <span
-            >💼
-            <a href="https://linkedin.com/in/jagadevij147" target="_blank"
-              >LinkedIn</a
-            ></span
-          >
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">Jagadevi</div>
+
+        <!-- MENU BUTTON -->
+        <div class="menu-toggle" id="menuToggle">☰</div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- Work Experience -->
-    <section class="card-section">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="card">
-        <h3>Team Leader – Pratham InfoTech Foundation</h3>
-        <small>July 2022 – Dec 2023</small>
-        <p>
-          Led digital literacy projects and coordinated teams to deliver IT
-          training to communities effectively.
-        </p>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-new">
+      <div class="hero-container">
+        <!-- IMAGE -->
+        <div class="hero-img-card">
+          <img src="profile.jpg" alt="Jagadevi" />
+        </div>
+
+        <!-- TEXT -->
+        <div class="hero-text">
+          <span class="hero-badge">MCA — Class of 2025</span>
+
+          <h1>Hi, I'm <span>Jagadevi</span></h1>
+
+          <p class="hero-desc">
+            MCA graduate and backend-focused Software Developer building secure
+            and scalable applications using Python, FastAPI, PostgreSQL and
+            Docker.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn-outline" download
+              >Download Resume ⬇</a
+            >
+          </div>
+
+          <div class="hero-contact">
+            <span
+              ><i class="fa-solid fa-envelope"></i> jagadevij147@gmail.com</span
+            >
+            <span><i class="fa-solid fa-phone"></i> 9741239614</span>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/jagadevij147" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Jagadevi147" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Education -->
-    <section class="card-section">
-      <h2 class="section-title">Education</h2>
-      <div class="card">
-        <h3>Master of Computer Application</h3>
-        <small>2023 – 2025 | Cambridge Institute of Technology, VTU</small>
-        <p>
-          CGPA: 9.25<br />
-          Courses: Web Dev, Data Structures, Algorithms, Data Science
-        </p>
-      </div>
-    </section>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-new reveal">
+      <h2>About</h2>
+      <p class="about-subtitle">A quick intro and the academic snapshot.</p>
 
-    <!-- Projects -->
-    <section class="card-section">
-      <h2 class="section-title">Projects</h2>
-      <div class="card">
-        <h3>Face Recognition-Based Voting Web Application</h3>
-        <small>May 2025 – Present</small>
-        <p>Technologies: HTML, CSS, JS, React, Java, MySQL</p>
-        <p>
-          Built a secure voting system using multi-factor authentication
-          including facial recognition and OTP.
-        </p>
-        <button class="view-more-btn" data-target="details1">View More</button>
-        <div id="details1" class="expandable-details">
+      <div class="about-grid">
+        <!-- LEFT CARD -->
+        <div class="about-card">
           <p>
-            This system uses face recognition and OTP verification to ensure
-            secure voting. Includes admin and user modules, React frontend, Java
-            backend, and MySQL DB. Ensures real-time logging and fraud
-            prevention.
+            I am a postgraduate in Computer Applications (MCA) with a strong
+            academic record. I enjoy building secure backend systems, REST APIs,
+            and scalable applications. I practice continuous learning and have
+            taken internships to improve collaboration and production-level
+            development.
+          </p>
+
+          <p><strong>Core:</strong> Python, FastAPI, PostgreSQL, MySQL</p>
+          <p>
+            <strong>Interests:</strong> Secure apps, Automation, Cloud basics
+          </p>
+          <p><strong>Availability:</strong> Open to full-time roles</p>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="about-card snapshot">
+          <h3>🎓 Academic Snapshot</h3>
+
+          <p class="highlight">
+            MCA — Cambridge Institute of Technology (2025)
+          </p>
+
+          <p>CGPA: 9.5 / 10</p>
+
+          <h4>📘 Key Coursework</h4>
+          <p>
+            Web Development, Data Structures, DBMS, Cloud Basics, Machine
+            Learning (Intro)
           </p>
         </div>
       </div>
-      <div class="card">
-        <h3>Indian Agriculture Analysis</h3>
-        <small>Jan 2025 – Feb 2025</small>
-        <p>Technologies: Python, Pandas, Matplotlib</p>
-        <p>
-          Forecasted rice production using regression analysis and data
-          visualization.
-        </p>
-        <button class="view-more-btn" data-target="details2">View More</button>
-        <div id="details2" class="expandable-details">
-          <p>
-            Used Python libraries (Pandas, NumPy, Matplotlib) to analyze and
-            predict crop yields. Created charts to visualize historical trends
-            and forecast future outputs. Supported strategic planning for
-            agriculture decision-making.
-          </p>
+    </section>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="education-new reveal">
+      <h2>Education</h2>
+      <p class="edu-subtitle">Formal education & important credentials</p>
+
+      <div class="education-list">
+        <!-- MCA -->
+        <div class="edu-card">
+          <div>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p>Cambridge Institute of Technology — 2025</p>
+          </div>
+
+          <div class="edu-score">CGPA: 9.5 / 10</div>
+        </div>
+
+        <!-- BSc -->
+        <div class="edu-card">
+          <div>
+            <h3>Bachelor of Science (BSc)</h3>
+            <p>Ch Charan Sing University, Meerut College</p>
+          </div>
+
+          <div class="edu-score">Percentage: 73.04 / 100</div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="skills-new reveal">
+      <h2>Skills</h2>
+      <p class="skills-subtitle">
+        Languages, frameworks & tools I use frequently
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="icons/python.png" alt="Python" />
+          <h4>Python</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/java.png" alt="Java" />
+          <h4>Java</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/postgreSQL.png" alt="PostgreSQL" />
+          <h4>PostgreSQL</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/mysql.png" alt="MySQL" />
+          <h4>SQL</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/html.png" alt="HTML" />
+          <h4>HTML</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/css.png" alt="CSS" />
+          <h4>CSS</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/javascript.png" alt="JavaScript" />
+          <h4>JavaScript</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/react.png" alt="React" />
+          <h4>React.js</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/node.png" alt="Node" />
+          <h4>Node.js</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/vue.png" alt="Vue" />
+          <h4>Vue.js</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/nuxt.png" alt="Nuxt" />
+          <h4>Nuxt.js</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/fastapi.png" alt="FastAPI" />
+          <h4>FastAPI</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/graphql.png" alt="GraphQL" />
+          <h4>GraphQL</h4>
+        </div>
+
+        <div class="skill-card">
+          <img src="icons/docker.png" alt="Docker" />
+          <h4>Docker</h4>
+        </div>
+        <div class="skill-card">
+          <img src="icons/git.png" alt="Git" />
+          <h4>Git & GitHub</h4>
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section class="card-section">
-      <h2 class="section-title">Skills</h2>
-      <div class="card skill-card">
-        <p><strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS</p>
-        <p><strong>Frameworks:</strong> React.js, Git, GitHub</p>
-        <p><strong>Data Science:</strong> Pandas, NumPy, Matplotlib, Seaborn</p>
-        <p>
-          <strong>Soft Skills:</strong> Leadership, Time Management,
-          Adaptability, Problem-Solving
-        </p>
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-new reveal">
+      <h2>Projects</h2>
+      <p class="projects-subtitle">
+        Selected projects — brief, useful and demo-ready
+      </p>
+
+      <div class="projects-grid">
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+          <img src="projects/expense.jpg" alt="Expense Reimbursement System" />
+
+          <div class="project-body">
+            <h3>Expense Reimbursement Management System</h3>
+            <span class="project-date">BoffinHive LLP</span>
+
+            <p>
+              Developed backend services using FastAPI and PostgreSQL. Managed
+              schema changes through Alembic migrations, exposed GraphQL APIs
+              using Hasura and Dockerized services for consistent deployment.
+            </p>
+
+            <a href="#" class="project-btn">View Code</a>
+          </div>
+        </div>
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+          <img src="projects/rpa.jpg" alt="Resume Automation Bot" />
+
+          <div class="project-body">
+            <h3>Resume Screening & Approval Automation</h3>
+            <span class="project-date">RPASoft.ai</span>
+
+            <p>
+              Built automation bot using UiPath to streamline resume screening.
+              Automated email notifications and approval routing via Outlook,
+              extracted candidate data into Excel reports and reduced manual
+              work.
+            </p>
+
+            <a href="#" class="project-btn">View Code</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <img src="projects/cruise.jpg" alt="Cruise Ship Management" />
+
+          <div class="project-body">
+            <h3>Cruise Ship Management System</h3>
+            <span class="project-date">Apr 2025 – Jul 2025</span>
+
+            <p>
+              Role-based management system (Admin, Manager, Head Cook,
+              Supervisor) with Firebase authentication, Firestore database and
+              real-time service booking. Deployed on GitHub Pages.
+            </p>
+
+            <a href="#" class="project-btn">View Code</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <img src="projects/voting.jpg" alt="Face Recognition Voting" />
+
+          <div class="project-body">
+            <h3>Face Recognition-Based Voting System</h3>
+            <span class="project-date">May 2025 – Present</span>
+
+            <p>
+              Secure voting platform with Aadhaar verification, OTP login and
+              face recognition using OpenCV, Node.js backend and MySQL database.
+            </p>
+
+            <a href="#" class="project-btn">View Code</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <img src="projects/resume.jpg" alt="Interactive Resume" />
+
+          <div class="project-body">
+            <h3>Interactive Resume Website</h3>
+
+            <p>
+              Portfolio site with hero animations, certificate gallery and
+              downloadable resume built using HTML, CSS and JavaScript.
+            </p>
+
+            <a href="#" class="project-btn">Live Site</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section class="card-section">
-      <h2 class="section-title">Certifications & Languages</h2>
-      <div class="card">
-        <p><strong>Certifications:</strong></p>
-        <ul>
-          <li>Cloud Computing & DevOps – EXCELER</li>
-          <li>Advanced Diploma in Programming – ITDESK</li>
-          <li>The Joy of Computing Using Python – NPTEL</li>
-        </ul>
-        <p><strong>Languages Known:</strong> English, Hindi, Kannada</p>
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="experience-new reveal">
+      <h2>Experience</h2>
+      <p class="exp-subtitle">
+        Professional roles & hands-on industry experience
+      </p>
+
+      <div class="experience-list">
+        <!-- EXPERIENCE 2 -->
+        <div class="exp-card">
+          <h3>Backend Developer Intern — BoffinHive LLP</h3>
+          <span class="exp-date">2025</span>
+
+          <p>
+            Built backend services using FastAPI and PostgreSQL. Managed schema
+            migrations using Alembic, exposed GraphQL APIs with Hasura and
+            containerized services using Docker for production-ready deployment.
+          </p>
+          <a href="certificates/boffinhive.pdf" target="_blank" class="exp-btn">
+            View Certificate
+          </a>
+        </div>
+
+        <!-- EXPERIENCE 3 -->
+        <div class="exp-card">
+          <h3>Automation Intern — RPASoft.ai</h3>
+          <span class="exp-date">2025</span>
+
+          <p>
+            Developed UiPath bots for resume screening and approval automation.
+            Integrated Outlook workflows, generated Excel reports and reduced
+            manual processing time significantly.
+          </p>
+          <a href="certificates/rpasoft.pdf" target="_blank" class="exp-btn">
+            View Certificate
+          </a>
+        </div>
+
+        <!-- EXPERIENCE 1 -->
+        <div class="exp-card">
+          <h3>Team Leader — Pratham InfoTech Foundation</h3>
+          <span class="exp-date">July 2022 – Dec 2023</span>
+
+          <p>
+            Led digital literacy programs and coordinated teams to deliver IT
+            training across communities. Mentored students, tracked progress and
+            ensured timely project execution while working with multiple
+            stakeholders.
+          </p>
+          <a href="certificates/pratham.pdf" target="_blank" class="exp-btn">
+            View Certificate
+          </a>
+        </div>
       </div>
     </section>
 
-    <script src="main.js"></script>
+    <!-- ================= CERTIFICATES ================= -->
+    <section id="certifications" class="certificates-section reveal">
+      <h2>Certificates</h2>
+      <p class="cert-subtitle">
+        Hover a card to zoom — click to open full preview
+      </p>
+
+      <div class="cert-grid">
+        <!-- FASTAPI -->
+        <a href="certificates/fastapi.jpg" target="_blank" class="cert-card">
+          <img src="certificates/fastapi.jpg" alt="FastAPI Certificate" />
+          <span>FastAPI — The Complete Course</span>
+        </a>
+
+        <!-- PYTHON -->
+        <a href="certificates/python.jpg" target="_blank" class="cert-card">
+          <img src="certificates/python.jpg" alt="Python Mega Course" />
+          <span>Python Mega Course</span>
+        </a>
+
+        <!-- NPTEL -->
+        <a href="certificates/nptel.jpg" target="_blank" class="cert-card">
+          <img src="certificates/nptel.jpg" alt="NPTEL Python" />
+          <span>Joy of Computing using Python</span>
+        </a>
+
+        <!-- CLOUD / DEVOPS -->
+        <a href="certificates/devops.jpg" target="_blank" class="cert-card">
+          <img src="certificates/devops.jpg" alt="Cloud & DevOps" />
+          <span>Cloud Computing & DevOps</span>
+        </a>
+      </div>
+    </section>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section reveal">
+      <h2>Contact</h2>
+      <p class="contact-subtitle">
+        Get in touch — open to full-time roles and internships
+      </p>
+
+      <div class="contact-box">
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="Name *" required />
+            <input type="email" placeholder="Email *" required />
+          </div>
+
+          <input type="text" placeholder="Subject *" required />
+
+          <textarea rows="5" placeholder="Message *" required></textarea>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+          <a
+            href="https://linkedin.com/in/jagadevij147"
+            target="_blank"
+            class="contact-btn"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/Jagadevi147"
+            target="_blank"
+            class="contact-btn"
+          >
+            GitHub
+          </a>
+
+          <a href="JagadeviCV.pdf" target="_blank" class="contact-btn">
+            Resume
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="main.js" defer></script>
   </body>
 </html>
