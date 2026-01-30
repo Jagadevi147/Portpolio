@@ -23,7 +23,7 @@ img {
   top: 0;
   width: 100%;
 
-  background: linear-gradient(90deg, #00c9a7, #00796b);
+  background: linear-gradient(90deg, #f40bd1, #f55feb);
 
   padding: 18px 0;
 
@@ -502,7 +502,7 @@ img {
 /* ================= EXPERIENCE SECTION ================= */
 
 .experience-new {
-  background: linear-gradient(135deg, #004d40, #00796b);
+  background: linear-gradient(135deg, #007179, #007179);
   padding: 120px 10%;
   color: white;
   text-align: center;
